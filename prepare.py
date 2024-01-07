@@ -9,14 +9,14 @@ def load_bi_encoder():
 
 # load crossEncoder model
 def load_cross_encoder():
-    CrossEncoder_path = r"C:\Users\o27911\OneDrive - First Abu Dhabi Bank\Desktop\AI\RFPs-Semantic_Search\CrossBin"
+    CrossEncoder_path = r"RFPs-Semantic_Search\CrossBin"
     cross_encoder = CrossEncoder(CrossEncoder_path)
     return cross_encoder    
 
 # load data
 def load_data():
-    main_ = pd.read_csv('data/MainFAQ.csv')
-    alternative = pd.read_excel('data/FAB_Variations_Only_Added_From_Automation_RD_28.9.23.xlsx')
+    main_ = pd.read_csv('data/MainQuestion.csv')
+    alternative = pd.read_excel('data/Variations_Only_Added_From_Automation_RD_28.9.23.xlsx')
     return main_, alternative
 
 # generate embeddings for main and alternative
