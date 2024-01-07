@@ -9,7 +9,7 @@ def load_bi_encoder():
 
 # load crossEncoder model
 def load_cross_encoder():
-    CrossEncoder_path = r"RFPs-Semantic_Search\CrossBin"
+    CrossEncoder_path = r"q-Semantic_Search\CrossBin"
     cross_encoder = CrossEncoder(CrossEncoder_path)
     return cross_encoder    
 
